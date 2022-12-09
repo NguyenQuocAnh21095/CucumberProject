@@ -1,4 +1,5 @@
+@test
 Feature: Test feature
   Scenario: Test Scenarios
-    Given I open url https://google.com
-    And I click element button
+    Given I login to app
+    And I click element Playlists

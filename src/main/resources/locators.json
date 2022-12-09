@@ -1,3 +1,8 @@
 {
-  "button": "(//*[@class='RNmpXc'])[2]"
+  "Playlists": "//span[@class='rmText' and text()='Playlists']",
+  "loginPage": {
+    "username_tb": "//input[@name='ctl01$cPC$ctl00$UserName']",
+    "password_tb": "//input[@name='ctl01$cPC$ctl00$Password']",
+    "login_btn":"//input[@name='ctl01$cPC$ctl00$ibLogin']"
+  }
 }
