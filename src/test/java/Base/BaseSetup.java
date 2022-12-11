@@ -1,16 +1,20 @@
 package Base;
 
-import java.util.concurrent.TimeUnit;
-
-
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
+import java.util.concurrent.TimeUnit;
+
 public class BaseSetup {
 
     WebDriver driver;
+//    DataHelper dataHelper = new DataHelper();
+//    Properties prop = new Properties();
+//    InputStream inputStream = null;
+//    int implicitWait;
+//    int pageLoadTimeout;
 
     public WebDriver getDriver() {
         return driver;
@@ -57,6 +61,10 @@ public class BaseSetup {
     public void initializeTestBaseSetup(String browserType, String appURL) {
         try {
             setDriver(browserType, appURL);
+//            inputStream = new FileInputStream("src/main/resources/config.properties");
+//            this.prop.load(inputStream);
+//            this.implicitWait = Integer.parseInt(this.prop.getProperty("implicitWait"));
+//            this.pageLoadTimeout = Integer.parseInt(this.prop.getProperty("pageLoadTimeout"));
         } catch (Exception e) {
             System.out.println("Error..." + e.getMessage());
         }

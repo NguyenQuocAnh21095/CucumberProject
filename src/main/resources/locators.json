@@ -1,8 +1,24 @@
 {
-  "Playlists": "//span[@class='rmText' and text()='Playlists']",
+  "Navigation":{
+    "Playlists": "//span[@class='rmText' and text()='Playlists']"
+  },
   "loginPage": {
     "username_tb": "//input[@name='ctl01$cPC$ctl00$UserName']",
     "password_tb": "//input[@name='ctl01$cPC$ctl00$Password']",
     "login_btn":"//input[@name='ctl01$cPC$ctl00$ibLogin']"
+  },
+  "Vibelogo": "//*[@id='ctl01_Logo_ctl00_ibBannerImage']",
+  "Loading": "//*[@class='vibeimLoadingIndicator']",
+  "Playlists":{
+    "CreateNewPlaylist_btn": "//*[@class='primary new-item-button']",
+    "NewPlaylist_txtbox": "//input[@id='text']",
+    "Create_btn":"//*[@class='primary']",
+    "Search": "//*[@placeholder='Search']",
+    "item_3dots": "//*[@class='MuiSvgIcon-root playlist-control-icon menu-icon']",
+    "item_delete": "//*[@class='circular-icon-menu-title' and text()='Delete']",
+    "item_delete_Yes": "//*[text()='Yes, Delete']"
+  },
+  "Playlist_editor": {
+    "SlideTitle_verification": "//*[text()='Test playlist 2']"
   }
 }

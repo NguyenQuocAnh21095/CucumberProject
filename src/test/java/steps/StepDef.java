@@ -2,18 +2,19 @@ package steps;
 
 import Base.BaseSetup;
 import dataHelper.DataHelper;
+import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
-import io.github.bonigarcia.wdm.WebDriverManager;
+import logpackage.ultilities.Log;
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import logpackage.ultilities.Log;
 
-import java.io.*;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStream;
 import java.util.Properties;
-import java.util.concurrent.TimeUnit;
 
 public class StepDef extends BaseSetup {
     WebDriver driver;
@@ -35,25 +36,52 @@ public class StepDef extends BaseSetup {
         this.stepAction = new StepAction(this.driver);
     }
     @Given("I login to app")
-    public void i_login_to_app() throws IOException {
-        driver.findElement(By.xpath(this.dataHelper.getLocatorsData("loginPage.username_tb"))).sendKeys(prop.getProperty("username"));
-        driver.findElement(By.xpath(this.dataHelper.getLocatorsData("loginPage.password_tb"))).sendKeys(prop.getProperty("password"));
-        driver.findElement(By.xpath(this.dataHelper.getLocatorsData("loginPage.login_btn"))).click();
-//        driver.navigate().to(url);
-//        driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
-//        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+    public void i_login_to_app() {
+//        this.stepAction.login_to_app();
+        try{
+            driver.findElement(By.xpath(this.dataHelper.getLocatorsData("loginPage.username_tb"))).sendKeys(prop.getProperty("username"));
+            driver.findElement(By.xpath(this.dataHelper.getLocatorsData("loginPage.password_tb"))).sendKeys(prop.getProperty("password"));
+            driver.findElement(By.xpath(this.dataHelper.getLocatorsData("loginPage.login_btn"))).click();
+            Assert.assertTrue(driver.findElement(By.xpath(this.dataHelper.getLocatorsData("Vibelogo"))).isDisplayed());
+            Log.info("Login to app successfully..!!");
+        }catch (Exception e){
+            Log.error("Login to app fail...!");
+            Assert.assertTrue(false);
+        }
     }
 
     @And("^I click element (.+)$")
     public void i_click_element(String locatorPath) throws IOException {
-        String xpath = this.dataHelper.getLocatorsData(locatorPath);
-        this.stepAction.clickElement(xpath);
+        this.stepAction.clickElement(locatorPath);
 //        Thread.sleep(5000);
 //        String xpath = dataHelper.getLocatorsData(locatorPath);
 //        driver.findElement(By.xpath(xpath));
 //        Log.info("Click element "+ xpath);
 //        Thread.sleep(5000);
     }
-
-
+    @And("^I input text (.+) to field (.+)$")
+    public void i_input_text(String text, String locatorPath) throws IOException {
+        this.stepAction.inputText(text, locatorPath);
+    }
+    @And("^I can see element (.+)$")
+    public void can_see_element(String locatorPath) throws IOException {
+        this.stepAction.canSeeElement(locatorPath);
+    }
+    @And("^I can see text (.+)$")
+    public void can_see_text(String text) throws IOException {
+        this.stepAction.canSeeText(text);
+    }
+    @And("^I cannot see text (.+)$")
+    public void cannot_see_text(String text) throws IOException{
+        this.stepAction.canNotSeeText(text);
+    }
+    @And("^If I see (.+) element I wait until it disappear$")
+    public void see_element_wait_until_disappear(String locatorPath) throws IOException {
+        this.stepAction.waitUntilElementComplete(locatorPath);
+    }
+    @After
+    public void closeBrowser() throws InterruptedException {
+        Thread.sleep(2000);
+        driver.quit();
+    }
 }
