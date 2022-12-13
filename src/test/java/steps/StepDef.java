@@ -83,5 +83,6 @@ public class StepDef extends BaseSetup {
     public void closeBrowser() throws InterruptedException {
         Thread.sleep(2000);
         driver.quit();
+        System.out.println("Completed test! Close browser");
     }
 }

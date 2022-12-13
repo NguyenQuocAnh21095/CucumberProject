@@ -9,10 +9,10 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "src/test/java/features",
         glue = "steps",
-        plugin = {"json:target/junit-cucumber-reports/cucumber.json",
+        plugin = {"pretty","json:target/junit-cucumber-reports/cucumber.json",
                 "junit:target/junit-cucumber-reports/cucumberReport.xml",
                 "html:target/junit-cucumber-reports/cucumberReport.html"},
-        tags = "@test or @test2"
+        tags = "@playlists or @test2"
 )
 
 //Supported properties are:
