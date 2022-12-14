@@ -1,48 +1,30 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="2" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="88.133">
-    <testcase classname="Create and Delete a playlist" name="Create new playlist" time="31.579">
-        <failure message="" type="java.lang.AssertionError"><![CDATA[Given I login to app........................................................passed
-And If I see Loading element I wait until it disappear......................failed
-And I click element Navigation.Playlists....................................skipped
-And If I see Loading element I wait until it disappear......................skipped
-And I click element Playlists.CreateNewPlaylist_btn.........................skipped
-And I input text Test playlist 2 to field Playlists.NewPlaylist_txtbox......skipped
-And I click element Playlists.Create_btn....................................skipped
-Then I can see text Test playlist 2.........................................skipped
-
-StackTrace:
-java.lang.AssertionError
-	at org.junit.Assert.fail(Assert.java:86)
-	at org.junit.Assert.assertTrue(Assert.java:41)
-	at org.junit.Assert.assertTrue(Assert.java:52)
-	at steps.StepAction.waitUntilElementComplete(StepAction.java:117)
-	at steps.StepDef.see_element_wait_until_disappear(StepDef.java:80)
-	at ✽.If I see Loading element I wait until it disappear(file:///C:/Users/ASUS%20ROG/IdeaProjects/CucumberProject/src/test/java/features/Playlists.feature:5)
-]]></failure>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="77.174">
+    <testcase classname="Create and Delete a playlist" name="Create new playlist" time="33.607">
+        <system-out><![CDATA[Given I login to app........................................................passed
+And If I see Loading element I wait until it disappear......................passed
+And I click element Navigation.Playlists....................................passed
+And If I see Loading element I wait until it disappear......................passed
+And I click element Playlists.CreateNewPlaylist_btn.........................passed
+And I input text Test playlist 2 to field Playlists.NewPlaylist_txtbox......passed
+And I click element Playlists.Create_btn....................................passed
+Then I can see text Test playlist 2.........................................passed
+]]></system-out>
     </testcase>
-    <testcase classname="Create and Delete a playlist" name="Delete playlist name" time="39.488">
-        <failure message="" type="java.lang.AssertionError"><![CDATA[Given I login to app........................................................passed
+    <testcase classname="Create and Delete a playlist" name="Delete playlist name" time="33.381">
+        <system-out><![CDATA[Given I login to app........................................................passed
 And I click element Navigation.Playlists....................................passed
 And If I see Loading element I wait until it disappear......................passed
 And I input text Test playlist 2 to field Playlists.Search..................passed
 And If I see Loading element I wait until it disappear......................passed
-And I click element Playlists.item_3dots....................................failed
-And I click element Playlists.item_delete...................................skipped
-And I click element Playlists.item_delete_Yes...............................skipped
-And If I see Loading element I wait until it disappear......................skipped
-Then I cannot see text Test playlist 2......................................skipped
-
-StackTrace:
-java.lang.AssertionError
-	at org.junit.Assert.fail(Assert.java:86)
-	at org.junit.Assert.assertTrue(Assert.java:41)
-	at org.junit.Assert.assertTrue(Assert.java:52)
-	at steps.StepAction.clickElement(StepAction.java:45)
-	at steps.StepDef.i_click_element(StepDef.java:55)
-	at ✽.I click element Playlists.item_3dots(file:///C:/Users/ASUS%20ROG/IdeaProjects/CucumberProject/src/test/java/features/Playlists.feature:20)
-]]></failure>
+And I click element Playlists.item_3dots....................................passed
+And I click element Playlists.item_delete...................................passed
+And I click element Playlists.item_delete_Yes...............................passed
+And If I see Loading element I wait until it disappear......................passed
+Then I cannot see text Test playlist 2......................................passed
+]]></system-out>
     </testcase>
-    <testcase classname="Test feature" name="Test Scenarios" time="16.968">
+    <testcase classname="Test feature" name="Test Scenarios" time="10.078">
         <system-out><![CDATA[Given I login to app........................................................passed
 ]]></system-out>
     </testcase>

@@ -76,7 +76,7 @@ $(document).ready(function() {
           <tr class="info">
             <td>CucumberProject</td>
                           <td>1</td>
-                        <td>13 Dec 2022, 22:44</td>
+                        <td>13 Dec 2022, 23:00</td>
           </tr>
         </tbody>
       </table>
@@ -123,17 +123,17 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">@playlists</td>
-                    <td >0</td>
-          <td  class="failed"    >2</td>
+                    <td  class="passed"    >2</td>
+          <td >0</td>
           <td class="total">2</td>
-          <td      class="passed"    >6</td>
-          <td      class="failed"    >2</td>
-          <td     class="skipped"   >10</td>
+          <td      class="passed"    >18</td>
+          <td >0</td>
+          <td >0</td>
           <td >0</td>
           <td >0</td>
           <td class="total">18</td>
-          <td class="duration" data-value="59435673200">59s 435ms</td>
-          <td class="failed">Failed</td>
+          <td class="duration" data-value="55179192900">55s 179ms</td>
+          <td class="passed">Passed</td>
         </tr>
         </tbody>
 
@@ -161,9 +161,9 @@ $(document).ready(function() {
   </div>
 
 
-    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
     
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Scenario</span>
   <span class="name">Create new playlist</span>
   
@@ -174,7 +174,7 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-1" class="collapse collapsable-details  in ">
+  <div id="element-1" class="collapse collapsable-details ">
     
   <div class="inner-level hooks-before">
         <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-2">
@@ -195,7 +195,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
                           <span class="location name">steps.StepDef.StartScenario()</span>
                         
-  <span class="lead-duration duration">4s 195ms</span>
+  <span class="lead-duration duration">4s 254ms</span>
 
           </div>
 
@@ -211,9 +211,9 @@ $(document).ready(function() {
 
     
 <div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-3">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-3">
     
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
   
@@ -223,14 +223,14 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-3" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-3" class="inner-level collapse collapsable-details ">
           <div class="step">
         
 <div class="brief passed">
   <span class="keyword indention">Given</span>
   <span class="name">I login to app</span>
   
-  <span class="lead-duration duration">4s 948ms</span>
+  <span class="lead-duration duration">13s 464ms</span>
 
   </div>
 
@@ -247,33 +247,15 @@ $(document).ready(function() {
       </div>
           <div class="step">
         
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">And</span>
   <span class="name">If I see Loading element I wait until it disappear</span>
   
-  <span class="lead-duration duration">20s 282ms</span>
+  <span class="lead-duration duration">10s 458ms</span>
 
   </div>
 
         
-
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-4">
-          <a>Error message</a>
-      </div>
-      <div id="msg-4" class="collapse collapsable-details">
-        <pre>java.lang.AssertionError
-	at org.junit.Assert.fail(Assert.java:86)
-	at org.junit.Assert.assertTrue(Assert.java:41)
-	at org.junit.Assert.assertTrue(Assert.java:52)
-	at steps.StepAction.waitUntilElementComplete(StepAction.java:117)
-	at steps.StepDef.see_element_wait_until_disappear(StepDef.java:80)
-	at ✽.If I see Loading element I wait until it disappear(file:///C:/Users/ASUS%20ROG/IdeaProjects/CucumberProject/src/test/java/features/Playlists.feature:5)
-</pre>
-      </div>
-    </div>
-  </div>
 
 
         
@@ -286,11 +268,11 @@ $(document).ready(function() {
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">And</span>
   <span class="name">I click element Navigation.Playlists</span>
   
-  <span class="lead-duration duration">000ms</span>
+  <span class="lead-duration duration">080ms</span>
 
   </div>
 
@@ -307,11 +289,11 @@ $(document).ready(function() {
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">And</span>
   <span class="name">If I see Loading element I wait until it disappear</span>
   
-  <span class="lead-duration duration">000ms</span>
+  <span class="lead-duration duration">1s 385ms</span>
 
   </div>
 
@@ -328,11 +310,11 @@ $(document).ready(function() {
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">And</span>
   <span class="name">I click element Playlists.CreateNewPlaylist_btn</span>
   
-  <span class="lead-duration duration">000ms</span>
+  <span class="lead-duration duration">142ms</span>
 
   </div>
 
@@ -349,11 +331,11 @@ $(document).ready(function() {
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">And</span>
   <span class="name">I input text Test playlist 2 to field Playlists.NewPlaylist_txtbox</span>
   
-  <span class="lead-duration duration">000ms</span>
+  <span class="lead-duration duration">103ms</span>
 
   </div>
 
@@ -370,11 +352,11 @@ $(document).ready(function() {
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">And</span>
   <span class="name">I click element Playlists.Create_btn</span>
   
-  <span class="lead-duration duration">000ms</span>
+  <span class="lead-duration duration">195ms</span>
 
   </div>
 
@@ -391,11 +373,11 @@ $(document).ready(function() {
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">Then</span>
   <span class="name">I can see text Test playlist 2</span>
   
-  <span class="lead-duration duration">000ms</span>
+  <span class="lead-duration duration">1s 375ms</span>
 
   </div>
 
@@ -416,7 +398,7 @@ $(document).ready(function() {
 
     
   <div class="inner-level hooks-after">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-5">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-4">
       
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -428,13 +410,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-5" class="inner-level collapse collapsable-details ">
+    <div id="after-4" class="inner-level collapse collapsable-details ">
               <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
                           <span class="location name">steps.StepDef.closeBrowser()</span>
                         
-  <span class="lead-duration duration">2s 137ms</span>
+  <span class="lead-duration duration">2s 129ms</span>
 
           </div>
 
@@ -462,9 +444,9 @@ $(document).ready(function() {
   </div>
 
 
-    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-6">
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-5">
     
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Scenario</span>
   <span class="name">Delete playlist name</span>
   
@@ -475,10 +457,10 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-6" class="collapse collapsable-details  in ">
+  <div id="element-5" class="collapse collapsable-details ">
     
   <div class="inner-level hooks-before">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-7">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-6">
       
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -490,13 +472,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="before-7" class="inner-level collapse collapsable-details ">
+    <div id="before-6" class="inner-level collapse collapsable-details ">
               <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
                           <span class="location name">steps.StepDef.StartScenario()</span>
                         
-  <span class="lead-duration duration">3s 148ms</span>
+  <span class="lead-duration duration">3s 264ms</span>
 
           </div>
 
@@ -512,9 +494,9 @@ $(document).ready(function() {
 
     
 <div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-8">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-7">
     
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
   
@@ -524,14 +506,14 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-8" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-7" class="inner-level collapse collapsable-details ">
           <div class="step">
         
 <div class="brief passed">
   <span class="keyword indention">Given</span>
   <span class="name">I login to app</span>
   
-  <span class="lead-duration duration">11s 298ms</span>
+  <span class="lead-duration duration">3s 970ms</span>
 
   </div>
 
@@ -552,7 +534,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">I click element Navigation.Playlists</span>
   
-  <span class="lead-duration duration">075ms</span>
+  <span class="lead-duration duration">066ms</span>
 
   </div>
 
@@ -573,7 +555,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">If I see Loading element I wait until it disappear</span>
   
-  <span class="lead-duration duration">1s 491ms</span>
+  <span class="lead-duration duration">1s 403ms</span>
 
   </div>
 
@@ -594,7 +576,91 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">I input text Test playlist 2 to field Playlists.Search</span>
   
-  <span class="lead-duration duration">169ms</span>
+  <span class="lead-duration duration">181ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">If I see Loading element I wait until it disappear</span>
+  
+  <span class="lead-duration duration">1s 086ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I click element Playlists.item_3dots</span>
+  
+  <span class="lead-duration duration">046ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I click element Playlists.item_delete</span>
+  
+  <span class="lead-duration duration">050ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I click element Playlists.item_delete_Yes</span>
+  
+  <span class="lead-duration duration">035ms</span>
 
   </div>
 
@@ -632,113 +698,11 @@ $(document).ready(function() {
       </div>
           <div class="step">
         
-<div class="brief failed">
-  <span class="keyword indention">And</span>
-  <span class="name">I click element Playlists.item_3dots</span>
-  
-  <span class="lead-duration duration">20s 062ms</span>
-
-  </div>
-
-        
-
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-9">
-          <a>Error message</a>
-      </div>
-      <div id="msg-9" class="collapse collapsable-details">
-        <pre>java.lang.AssertionError
-	at org.junit.Assert.fail(Assert.java:86)
-	at org.junit.Assert.assertTrue(Assert.java:41)
-	at org.junit.Assert.assertTrue(Assert.java:52)
-	at steps.StepAction.clickElement(StepAction.java:45)
-	at steps.StepDef.i_click_element(StepDef.java:55)
-	at ✽.I click element Playlists.item_3dots(file:///C:/Users/ASUS%20ROG/IdeaProjects/CucumberProject/src/test/java/features/Playlists.feature:20)
-</pre>
-      </div>
-    </div>
-  </div>
-
-
-        
-        
-
-        
-
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief skipped">
-  <span class="keyword indention">And</span>
-  <span class="name">I click element Playlists.item_delete</span>
-  
-  <span class="lead-duration duration">000ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief skipped">
-  <span class="keyword indention">And</span>
-  <span class="name">I click element Playlists.item_delete_Yes</span>
-  
-  <span class="lead-duration duration">000ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief skipped">
-  <span class="keyword indention">And</span>
-  <span class="name">If I see Loading element I wait until it disappear</span>
-  
-  <span class="lead-duration duration">000ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">Then</span>
   <span class="name">I cannot see text Test playlist 2</span>
   
-  <span class="lead-duration duration">000ms</span>
+  <span class="lead-duration duration">20s 023ms</span>
 
   </div>
 
@@ -759,7 +723,7 @@ $(document).ready(function() {
 
     
   <div class="inner-level hooks-after">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-10">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-8">
       
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -771,13 +735,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-10" class="inner-level collapse collapsable-details ">
+    <div id="after-8" class="inner-level collapse collapsable-details ">
               <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
                           <span class="location name">steps.StepDef.closeBrowser()</span>
                         
-  <span class="lead-duration duration">2s 130ms</span>
+  <span class="lead-duration duration">2s 138ms</span>
 
           </div>
 
