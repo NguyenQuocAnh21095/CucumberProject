@@ -12,7 +12,7 @@ import org.junit.runner.RunWith;
         plugin = {"pretty","json:target/junit-cucumber-reports/cucumber.json",
                 "junit:target/junit-cucumber-reports/cucumberReport.xml",
                 "html:target/junit-cucumber-reports/cucumberReport.html"},
-        tags = "@playlists or @test2"
+        tags = "@test2"
 )
 
 //Supported properties are:
