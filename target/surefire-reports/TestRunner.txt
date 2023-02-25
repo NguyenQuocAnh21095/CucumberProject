@@ -1,4 +1,7 @@
 -------------------------------------------------------------------------------
 Test set: TestRunner
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 65.658 sec
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 26.899 s <<< FAILURE! - in TestRunner
+Test Scenarios(Test feature)  Time elapsed: 26.375 s  <<< ERROR!
+java.lang.RuntimeException: Couldn't find field and value in locators.json for input Navigation.Playlists1Please refer exact path of your web element from locators.json. The standard format should be (pageName.webElement) e.g loginPage.password
+

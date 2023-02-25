@@ -1,43 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="2" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="96.622">
-    <testcase classname="Create and Delete a playlist" name="Create new playlist" time="55.207">
-        <failure message="" type="java.lang.AssertionError"><![CDATA[Given I login to app........................................................failed
-And If I see Loading element I wait until it disappear......................skipped
-And I click element Navigation.Playlists....................................skipped
-And If I see Loading element I wait until it disappear......................skipped
-And I click element Playlists.CreateNewPlaylist_btn.........................skipped
-And I input text Test playlist 2 to field Playlists.NewPlaylist_txtbox......skipped
-And I click element Playlists.Create_btn....................................skipped
-Then I can see text Test playlist 2.........................................skipped
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="26.434">
+    <testcase classname="Test feature" name="Test Scenarios" time="26.325">
+        <failure message="Couldn't find field and value in locators.json for input Navigation.Playlists1Please refer exact path of your web element from locators.json. The standard format should be (pageName.webElement) e.g loginPage.password" type="java.lang.RuntimeException"><![CDATA[Given I login to app........................................................passed
+And If I see Loading element I wait until it disappear......................passed
+And I click element Navigation.Playlists1...................................failed
 
 StackTrace:
-java.lang.AssertionError
-	at org.junit.Assert.fail(Assert.java:86)
-	at org.junit.Assert.assertTrue(Assert.java:41)
-	at org.junit.Assert.assertTrue(Assert.java:52)
-	at steps.StepDef.i_login_to_app(StepDef.java:49)
-	at ✽.I login to app(file:///C:/Users/ASUS%20ROG/IdeaProjects/CucumberProject/src/test/java/features/Playlists.feature:4)
-]]></failure>
-    </testcase>
-    <testcase classname="Create and Delete a playlist" name="Delete playlist name" time="41.263">
-        <failure message="" type="java.lang.AssertionError"><![CDATA[Given I login to app........................................................failed
-And I click element Navigation.Playlists....................................skipped
-And If I see Loading element I wait until it disappear......................skipped
-And I input text Test playlist 2 to field Playlists.Search..................skipped
-And If I see Loading element I wait until it disappear......................skipped
-And I click element Playlists.item_3dots....................................skipped
-And I click element Playlists.item_delete...................................skipped
-And I click element Playlists.item_delete_Yes...............................skipped
-And If I see Loading element I wait until it disappear......................skipped
-Then I cannot see text Test playlist 2......................................skipped
-
-StackTrace:
-java.lang.AssertionError
-	at org.junit.Assert.fail(Assert.java:86)
-	at org.junit.Assert.assertTrue(Assert.java:41)
-	at org.junit.Assert.assertTrue(Assert.java:52)
-	at steps.StepDef.i_login_to_app(StepDef.java:49)
-	at ✽.I login to app(file:///C:/Users/ASUS%20ROG/IdeaProjects/CucumberProject/src/test/java/features/Playlists.feature:15)
+java.lang.RuntimeException: Couldn't find field and value in locators.json for input Navigation.Playlists1Please refer exact path of your web element from locators.json. The standard format should be (pageName.webElement) e.g loginPage.password
+	at dataHelper.DataHelper.getLocatorsData(DataHelper.java:17)
+	at steps.StepAction.clickElement(StepAction.java:39)
+	at steps.StepDef.i_click_element(StepDef.java:55)
+	at ✽.I click element Navigation.Playlists1(file:///C:/Users/ASUS%20ROG/IdeaProjects/CucumberProject/src/test/java/features/test2.feature:6)
 ]]></failure>
     </testcase>
 </testsuite>
