@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="26.434">
-    <testcase classname="Test feature" name="Test Scenarios" time="26.325">
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="17.675">
+    <testcase classname="Test feature" name="Test Scenarios" time="17.56">
         <failure message="Couldn't find field and value in locators.json for input Navigation.Playlists1Please refer exact path of your web element from locators.json. The standard format should be (pageName.webElement) e.g loginPage.password" type="java.lang.RuntimeException"><![CDATA[Given I login to app........................................................passed
 And If I see Loading element I wait until it disappear......................passed
 And I click element Navigation.Playlists1...................................failed
